@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fefefe;
+  color: #333;
+  transition: margin-left 0.3s;
+}
+header {
+  text-align: center;
+  padding: 2em 0 1em 0;
+}
+.jump-btn {
+  display: block;
+  margin: 1em auto;
+  padding: 1em 2em;
+  background-color: #ffaa00;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.jump-btn:hover {
+  background-color: #ff8800;
+}
+.intro {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin: 2em 0;
+}
+.recipe-section {
+  margin-top: 3em;
+  border-top: 2px solid #ffaa00;
+  padding-top: 2em;
+}
+.ingredients, .instructions {
+  margin-bottom: 2em;
+}
+h2 {
+  color: #ffaa00;
+}
+/* Sidebar styles */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #ffaa00;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+}
+.sidebar a {
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #fff;
+  display: block;
+  transition: background 0.2s;
+}
+.sidebar a:hover {
+  background-color: #ff8800;
+}
+.closebtn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2em;
+  color: #fff;
+  cursor: pointer;
+}
+.openbtn {
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: #ffaa00;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2000;
+}
+@media (max-width: 700px) {
+  body {
+    max-width: 100vw;
+    margin: 0;
+  }
+}
