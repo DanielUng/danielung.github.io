@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delicious Pancakes Recipe</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 0 auto;
+      background: #fefefe;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 2em 0 1em 0;
+    }
+    .jump-btn {
+      display: block;
+      margin: 1em auto;
+      padding: 1em 2em;
+      background-color: #ffaa00;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .jump-btn:hover {
+      background-color: #ff8800;
+    }
+    .intro {
+      font-size: 1.1em;
+      line-height: 1.8;
+      margin: 2em 0;
+    }
+    .recipe-section {
+      margin-top: 3em;
+      border-top: 2px solid #ffaa00;
+      padding-top: 2em;
+    }
+    .ingredients, .instructions {
+      margin-bottom: 2em;
+    }
+    h2 {
+      color: #ffaa00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Delicious Pancakes</h1>
+    <button class="jump-btn" onclick="document.getElementById('recipe').scrollIntoView({behavior:'smooth'})">
+      Jump to Recipe
+    </button>
+  </header>
+
+  <div class="intro">
+    <p>
+      Nothing beats the taste of homemade pancakes for breakfast! This easy pancake recipe is quick to prepare and results in fluffy, golden-brown pancakes every time. Serve with syrup and your favorite toppings.
+    </p>
+  </div>
+
+  <!-- Some filler content to create scroll -->
+  <div>
+    <p><em>Fun Fact:</em> Did you know pancakes date back to Ancient Greece?</p>
+    <p>You can experiment by adding blueberries, chocolate chips, or bananas to your pancake batter for even more deliciousness!</p>
+  </div>
+
+  <div id="recipe" class="recipe-section">
+    <h2>Ingredients</h2>
+    <ul class="ingredients">
+      <li>1 1/2 cups all-purpose flour</li>
+      <li>3 1/2 teaspoons baking powder</li>
+      <li>1 teaspoon salt</li>
+      <li>1 tablespoon sugar</li>
+      <li>1 1/4 cups milk</li>
+      <li>1 egg</li>
+      <li>3 tablespoons melted butter</li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <ol class="instructions">
+      <li>In a bowl, sift together the flour, baking powder, salt, and sugar.</li>
+      <li>Make a well in the center and pour in the milk, egg, and melted butter; mix until smooth.</li>
+      <li>Heat a lightly oiled griddle or frying pan over medium-high heat.</li>
+      <li>Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake.</li>
+      <li>Brown on both sides and serve hot.</li>
+    </ol>
+  </div>
+</body>
+</html>
